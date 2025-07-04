@@ -1,0 +1,23 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "hardhat": "^2.25.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "ethers": "^6.15.0",
+    "ipfs-http-client": "^60.0.1",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.5.2",
+    "ps-list": "^8.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:node": "npx hardhat node",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "run:weekly_audit": "node runAudit.js && npx hardhat run scripts/submitRoot.js --network localhost",
+    "generate:proof": "node generateProof.js",
+    "start:auditor_ui": "streamlit run auditor_ui.py"
+  }
+}
