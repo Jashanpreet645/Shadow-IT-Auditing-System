@@ -111,8 +111,8 @@ To perform all company-side tasks (deploy, collect logs, sign, hash, upload to I
    * `4` → Exit
 
 > ℹ️ On first run, the contract is deployed automatically.
-if you choose `1` then the json, signature,sha256 files initilize in audit_output/proofs folder
-if you choose `2` then the proof file initilize in your audit_output/proofs folder.
+- if you choose `1` then the json, signature,sha256 files initilize in audit_output/proofs folder
+- if you choose `2` then the proof file initilize in your audit_output/proofs folder.
 
 ---
 
